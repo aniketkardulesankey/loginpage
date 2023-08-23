@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Roboto
+}
+
+.flex{
+    display:flex
+}
+
+a{
+    text-decoration:none;
+}
+
+.form-container{
+    width:100%;
+    height:100vh;
+}
+
+.image-container{
+    width:50%;
+    height:100%;
+    overflow:hidden;
+}
+.image-container img{
+    width:100%;
+    height:100%;
+}
+.flex-container{
+    width:100%;
+    height:100%;
+}
+.form-content{
+    width:100%;
+    height:100%;
+    margin:auto;
+}
+.form-input{
+    width:80%;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display:block
+}
+
+.form-input label{
+    color: var(--800, #2D3748);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+}
+
+.form-input h2{
+    color: var(--900, #1A202C);
+    font-size: 30px;
+    margin-bottom:12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal
+}
+.form-input input, .google-signin{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    padding-left:10px;
+    margin:7px auto 7px auto;
+    border: 1px solid #E8E8E8
+}
+.form-input input[type=radio]{
+    height:15px;
+    width:15px;
+    margin-right:10px;
+    float:left;
+    box-sizing: border-box;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: relative
+}
+.form-input input[type=submit]{
+    color:white;
+    background:#04c35c;
+    width:calc(100% + 10px);
+    border:none;
+    font-size:16px
+}
+.google-signin{
+    position:relative;
+    color:white;
+    background:#2d3748;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    line-height:50px;
+    font-size:16px;
+    text-align:center
+}
+.google-img{
+    padding:5px;
+    width:20px;
+    height:20px
+}
+.form-input .remember-forgot{
+    margin:15px auto 15px auto;
+    position:relative
+}
+.form-input .remember-forgot input{
+    margin-right:10px;
+}
+.form-input .remember-forgot a{
+    float:right;
+    display:block;
+    margin:auto 0 auto auto
+}
+
+.form-content{
+    width:30%;
+    margin:auto;
+    position:relative
+}
+.create-account{
+    position:absolute;
+    bottom:50px;
+    left:50%;
+    transform: translateX(-50%);
+    width:280px;
+    font-size:16px
+}
+
+@media only screen and (max-width: 600px){
+    .flex-container{
+        display:block;
+        width:100%
+    }
+    .image-container, .form-content{
+        width:100%
+    }
+    .form-content{
+        margin-top:50px
+    }
+}
