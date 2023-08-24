@@ -12,18 +12,21 @@ const validateForm = function(e){
     if(userEmail === email && userPassword === password){
         document.location.href = "welcome.html";
     }else{
+
+        const invalidEmail = document.getElementById("invalidEmail"),
+        invalidPassword = document.getElementById("invalidPassword");
+
         if(userEmail != email && userPassword != password){
-            const invalidEmail = document.getElementById("invalidEmail");
-            const invalidPassword = document.getElementById("invalidPassword")
-            invalidEmail.innerText = "Your email is not valid!";
+            invalidEmail.innerText = "Your Email is not valid!";
             invalidPassword.innerText = "Your Password is not valid!";
         }else if(userEmail != email){
-            const invalidEmail = document.getElementById("invalidEmail");
             invalidEmail.innerText = "Your email is not valid!";
+            invalidPassword.innerText = "";
         }else if(userPassword != password){
-            const invalidPassword = document.getElementById("invalidPassword")
             invalidPassword.innerText = "Your Password is not valid!";
+            invalidEmail.innerText = "";
         }
+
     }
 }
 
