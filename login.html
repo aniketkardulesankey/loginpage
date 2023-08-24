@@ -17,13 +17,15 @@
             </div>
             <div class="form-content">
                 <div class="form-input">
-                    <form action="">
+                    <form id="loginForm">
                         <label for="welcome">Welcome back</label>
                         <h2>Login to your account</h2>
                         <label for="email">Email</lable></br>
-                        <input id=""email type="email" placeholder="John.snow@gmail.com" /></br>
+                        <input id="email" name="email" type="email" placeholder="John.snow@gmail.com" />
+                        <p id="invalidEmail"></p>
                         <label for="password">Password</label></br>
-                        <input id="password" type="password" value="Pass@1234"/>
+                        <input id="password" name="password" type="password" placeholder="*****"/>
+                        <p id="invalidPassword"></p>
                         <div class="flex remember-forgot"><input type="radio" name="remember"/><label for="remember">Remember me</label> <a href="#">Forgot password?</a></div>
                         <input id="submit" name="submit" type="submit" value="Login now"/>
                         <p class="google-signin flex"><img class="google-img" src="src/images/google_logo.png" alt="google logo"/>  Or Sign-in with google</p>
@@ -34,4 +36,5 @@
         </div>
     </div>
 </body>
+<script type="text/javascript" src="scripts/main.js"></script>
 </html>
