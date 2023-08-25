@@ -16,16 +16,8 @@ const validateForm = function(e){
         const invalidEmail = document.getElementById("invalidEmail"),
         invalidPassword = document.getElementById("invalidPassword");
 
-        if(userEmail != email && userPassword != password){
-            invalidEmail.innerText = "Your Email is not valid!";
-            invalidPassword.innerText = "Your Password is not valid!";
-        }else if(userEmail != email){
-            invalidEmail.innerText = "Your email is not valid!";
-            invalidPassword.innerText = "";
-        }else if(userPassword != password){
-            invalidPassword.innerText = "Your Password is not valid!";
-            invalidEmail.innerText = "";
-        }
+        invalidEmail.innerText = userEmail != email ? "Your Email is not valid!" : "";
+        invalidPassword.innerText = userPassword != password ? "Your Password is not valid!" : "";
 
     }
 }
